@@ -1,0 +1,383 @@
+body, html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+header{
+    position: sticky;
+    display:flex;
+    justify-content:space-between;
+    left:0;
+    top:0;
+    right:0;
+    background-color: WHITE;
+    z-index: 9;
+}
+
+.ruben{
+    font-family:monospace;
+    color:rgb(146, 142, 142);
+    font-size:30px;
+    margin-bottom:0px;
+}
+
+.aboutMe{
+    font-family:monospace;
+    color:black;
+    font-size:20px;
+    padding-top:0px;
+}
+.navbar{
+    display:flex;
+}
+
+.links-container{
+    display:flex;
+    text-decoration: none;
+}
+
+.link, .link-item{
+    text-decoration: none;
+    list-style: none;
+    padding-top:20px;
+    padding:10px;
+    margin-top:10px;
+    text-align: right;
+    color:rgb(146, 142, 142);
+}
+
+.IntroductionSection{
+    display:flex;
+}
+.myProfilePhoto{
+    background-color: black;
+    height:25%px;
+    width:10%;
+    display:flex;
+    left:0;
+
+}
+.myIntroduction{
+    font-family:monospace;
+    color:black;
+    font-size:30px;  
+    font-weight: 800;
+    text-align:center;
+    width:100%;
+    position:relative;
+}
+.Hello{font-family:monospace;
+    color:black;
+    font-size:30px;  
+    font-weight: 800;
+
+}
+
+.myDescription{
+      display:flex;
+    color:rgb(146, 142, 142);
+    align-items:center;
+    width:100%;
+    justify-content: center;
+    
+}
+
+.resume, .myCV{
+    align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.resume{
+    border-top:5px solid black;
+}
+.myCV{
+    border-radius: 100px;
+    padding:20px;
+    height:40px;
+    color:rgb(146, 142, 142);
+   border:none;
+}
+
+.myCV:hover{
+    opacity: .5;
+}
+
+#linkedin {
+    margin-left: 20px;
+    margin-top:10px;
+    padding: 10px;
+width: auto;
+border-radius: 100px 100px;
+  color:rgb(146, 142, 142);
+  background-color: black;
+
+}
+
+#github {
+Margin-left:20px;
+margin-top:10px;
+color:black;
+}
+
+#github:hover{
+    opacity:0.5;
+}
+
+#linkedin:hover{
+    opacity: .5;
+}
+
+
+/* =============================================================
+
+Start of Experience section style
+
+================================================================*/
+
+
+.myExperience{
+  display:flex;
+   margin-top: 20px;
+   background-color: #ffffff;
+   ;
+}
+
+.ExperienceHeader{
+    background-color: black;
+    height:auto;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  DISPLAY:FLEX;
+}
+
+.ExperienceTitle{
+        color:white;
+    font-size:100px;
+  
+}
+
+.Positions-Container{
+    flex:1;
+}
+.myPositions{  
+border: 2px solid rgb(146, 142, 142);
+flex:1;
+border-radius: 10px 10px;
+margin:20px;
+padding:10px;
+box-shadow: 0px 0px 0px 2px #000,
+0 6px 0 YELLOW,
+0px 6px 0px 2px #000,
+0px 0px 0px 2px #000;
+}
+
+.myPositions:hover{
+    opacity: 0.5;
+    transform: translate(10px,0px);
+}
+
+
+/* THIS IS JUST TEMPORARY */
+.myPositions:active{
+    opacity: 1.5;
+    transform: translate(-50%,-50%);
+    height:50%;
+    width:50%;
+    position:absolute;
+    justify-content: CENTER;
+    align-items: CENTER;
+    background-color: white;
+}
+
+.Position-Image{
+    display:flex;
+    height:100px;
+    width:100px;
+    
+}
+
+.PositionTitle h2{
+    
+    width:100px;
+margin-left:50%;
+    text-align: right;
+}
+
+
+/* =============================================================
+
+Start of Education section style
+
+================================================================*/
+
+.myEducation{
+    display:flex;
+     margin-top: 20px;
+  }
+  
+  .EducationHeader{
+      background-color: black;
+      height:auto;
+      width: 50%;
+      align-items: center;
+      justify-content: center;
+    DISPLAY:FLEX;
+  }
+
+  .EducationTitle{
+
+            color:white;
+    font-size:100px;
+  
+}
+
+/* =============================================================
+
+Start of Skilss section style
+
+================================================================*/
+
+.skills-section{
+    background-color: rgb(230, 222, 222);
+}
+.mySkills{
+    display:flex;
+    flex:1;
+        margin-top: 10px;
+     height:1   50px;
+     width:100%;
+     background-color: rgb(236, 230, 230);
+    
+  }
+  
+  .SkillsHeader{
+    flex:1;
+      background-color: rgb(230, 222, 222);
+      height:150px;
+      width: 100%;
+      align-items: top;
+    justify-content: center;
+        DISPLAY:FLEX;
+  }
+
+  .SkillsTitle{
+    margin-top:0;
+        color:black;
+    font-size:100px;  
+}
+
+#names{
+    display:flex;
+    position:absolute;
+display:inline-flex;
+margin-top:100px;
+justify-content: center;
+}
+
+.bactive{
+    justify-content: space-around;
+    padding-right:10px;
+    cursor:pointer;
+    color:white;}
+
+
+#hbars{
+    display:inline-flex;
+    margin:none;
+  /* background-color: black;*/
+    justify-content: center;
+   width:33%;
+   padding:0;
+}
+
+#Skillbox{
+width: auto;
+
+}
+.SkillName{
+    color:white;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/* =============================================================
+
+Start of Certificates section style
+
+================================================================*/
+
+.Certificates-Title{
+    margin-top:25px;
+    color:black;
+    font-size:100px;  
+    text-align: center;
+    height: 150px;
+    margin-bottom: 0;
+}
+
+.Certificates-Container{
+    display:flex;
+}
+.Certificate-Month{
+    position: center;
+    text-align:center;
+    background: #ffdc7c;
+    padding: 5px;
+    border-radius: 5px;
+    color:white;  
+      
+}
+
+.Certificate-Info{
+    flex:1;
+    padding:10px;
+    
+    height:33%;
+}
+
+
+.Certificate-Issuer, .Certificate-Description{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.Certificate-Logo{
+    display:block;
+    height:150PX;
+    width:150PX;
+    margin-left:82px;
+    margin-top:25px;
+    margin:auto;
+}
+
+.Certificate-Logo2{
+    display:block;
+    height:150PX;
+    width:250PX;
+    margin:auto;
+}
+
+.Certificate-Btn{
+    margin-top:25px;
+    display:block;
+    margin:auto;
+    border-radius: 100px;
+    padding:10px;
+    background-color: #ffdc7c;
+    border:none;
+    text-decoration: none;
+}
+
+.Certificate-Btn:hover{
+    opacity:0.5}
+
+
