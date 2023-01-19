@@ -1,5 +1,10 @@
+@import url(/PersonalPage/css/footer.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 body, html {
     height: 100%;
+    color:#39496a;
+    font-family: poppins,sans-serif,roboto;
   }
 
   body {
@@ -100,8 +105,8 @@ header{
     border-radius: 100px;
     padding:20px;
     height:40px;
-    color:rgb(146, 142, 142);
-   border:none;
+   color:rgb(146, 142, 142); 
+      border:none;
 }
 
 .myCV:hover{
@@ -149,22 +154,24 @@ Start of Experience section style
 }
 
 .ExperienceHeader{
-    background-color: black;
+    background-color: #f8eac4;
     height:auto;
     width: 50%;
     align-items: center;
     justify-content: center;
-  DISPLAY:FLEX;
+    DISPLAY:FLEX;
+    border-top-right-radius  : 50px;
+    border-bottom-right-radius  : 50px;
 }
 
 .ExperienceTitle{
-        color:white;
+        color:black;
     font-size:100px;
   
 }
 
 .Positions-Container{
-    flex:1;
+    flex:auto;
 }
 .myPositions{  
 border: 2px solid rgb(146, 142, 142);
@@ -173,12 +180,13 @@ border-radius: 10px 10px;
 margin:20px;
 padding:10px;
 box-shadow: 0px 0px 0px 2px #000,
-0 6px 0 YELLOW,
+0 6px 0 #ffdc7c,
 0px 6px 0px 2px #000,
 0px 0px 0px 2px #000;
 }
 
 .myPositions:hover{
+    cursor:pointer;
     opacity: 0.5;
     transform: translate(10px,0px);
 }
@@ -190,7 +198,7 @@ box-shadow: 0px 0px 0px 2px #000,
     transform: translate(-50%,-50%);
     height:50%;
     width:50%;
-    position:absolute;
+   position:absolute;
     justify-content: CENTER;
     align-items: CENTER;
     background-color: white;
@@ -203,11 +211,21 @@ box-shadow: 0px 0px 0px 2px #000,
     
 }
 
-.PositionTitle h2{
-    
-    width:100px;
-margin-left:50%;
-    text-align: right;
+.PositionTitle {
+    position:relative;
+    right:0;
+    top:0;
+    width:800px;
+    background-color: black;
+    float:right;
+      /*  text-align: center;
+     margin-right: 50px; 
+    padding:auto;
+    right:10px;
+    width:100%;
+
+   margin-left:50%;
+    text-align: right;*/
 }
 
 
@@ -218,25 +236,65 @@ Start of Education section style
 ================================================================*/
 
 .myEducation{
-    display:flex;
-     margin-top: 20px;
+    display:1;
+     margin-top: 10px;
+     background-color: white;
   }
   
   .EducationHeader{
-      background-color: black;
-      height:auto;
-      width: 50%;
-      align-items: center;
+      background-color: white;
+      width: 100%;
+      height:350px;
+      align-items: top;
       justify-content: center;
-    DISPLAY:FLEX;
-  }
+      DISPLAY:FLEX;
+    }
 
   .EducationTitle{
-
-            color:white;
+    color:black;
     font-size:100px;
-  
+    margin-top:0;
+    ;
 }
+
+.Education-Container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top:150px;
+    position:absolute;
+    align-items: center;
+    }
+
+    .Study-Type{
+        display:flex;
+        justify-content: center;
+        padding:10px;
+        font-size: 20px;
+        font-family:poppins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:black;
+        text-align: center;
+    }
+    .Study{
+        margin: 10px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+          /*     border: 5px solid rgb(230, 222, 222); */
+        background-color: rgb(240, 237, 237);
+        border-radius: 10px;
+        
+                }
+
+    .Study-Description{
+        text-align: center;
+        font-family: poppins,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .Study-Icon{
+        width: 20%;
+        margin:auto;
+        display: block;
+        
+    }
 
 /* =============================================================
 
@@ -245,7 +303,9 @@ Start of Skilss section style
 ================================================================*/
 
 .skills-section{
-    background-color: rgb(230, 222, 222);
+  /*  background-color: rgb(230, 222, 222);*/
+  background-color:  #f8eac4;
+  margin-top: 10%;
 }
 .mySkills{
     display:flex;
@@ -253,13 +313,15 @@ Start of Skilss section style
         margin-top: 10px;
      height:1   50px;
      width:100%;
-     background-color: rgb(236, 230, 230);
+     /*background-color: rgb(236, 230, 230);*/
+     background-color: #f8eac4;
     
   }
   
   .SkillsHeader{
     flex:1;
-      background-color: rgb(230, 222, 222);
+     /* background-color: rgb(230, 222, 222);*/
+      background-color: #f8eac4;
       height:150px;
       width: 100%;
       align-items: top;
@@ -285,7 +347,7 @@ justify-content: center;
     justify-content: space-around;
     padding-right:10px;
     cursor:pointer;
-    color:white;}
+    color:black;}
 
 
 #hbars{
@@ -302,7 +364,7 @@ width: auto;
 
 }
 .SkillName{
-    color:white;
+    color:black;
     text-align: center;
     font-size: 50px;
 }
@@ -325,6 +387,7 @@ Start of Certificates section style
 
 .Certificates-Container{
     display:flex;
+    flex-direction: row;
 }
 .Certificate-Month{
     position: center;
@@ -347,6 +410,10 @@ Start of Certificates section style
 .Certificate-Issuer, .Certificate-Description{
     margin-bottom: 5px;
     text-align: center;
+}
+
+.Certificate-Issuer{
+    color:black;
 }
 
 
@@ -380,4 +447,43 @@ Start of Certificates section style
 .Certificate-Btn:hover{
     opacity:0.5}
 
+    @media screen and (max-width: 500px) {
+        .Certificates-Container, .Education-Container, .myEducation, .Certificates-Title, .Positions-Container {   
+          flex-direction: column;
+        }
+      }
+/* Hide the normal menu for small devices*/
+      @media screen and (max-width: 500px) {
+        .navbar {
+          display: none;
+        }
+        .navbar-hamburger {
+          display: inline;
+        }
+      }
+/* Hide the Hamburger menu for big devices*/
+      @media screen and (min-width: 500px) {
+        .navbar {
+          display: inline;
+        }
+        .navbar-hamburger {
+          display: none;
+        }
+      }
+
+      @keyframes fadeInOutAnimation {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      
+      .Study {
+        cursor: pointer;
+       animation: fadeInOutAnimation 1.5s ;
+       animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+      }
 

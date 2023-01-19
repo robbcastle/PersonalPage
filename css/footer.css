@@ -1,0 +1,36 @@
+.Footer-Container{
+    background-color: #f8eac4;
+    height: auto;
+    width: 100%;
+}
+
+.ContactMe{
+    display:flex;
+    color:black;
+    justify-content: center; 
+   padding-top: 30px;
+
+}
+
+.Footer-Rights, .Footer-DesignedBy{
+    text-align: center;
+    padding-bottom: 2vh;
+}
+
+
+.SocialMediaLinksList{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    width:300px;
+    margin: auto;
+    size-adjust: 100px;
+}
+
+#icon{
+   color:rgb(1, 1, 1);
+   opacity: 1;
+}
+#icon:hover{
+    opacity: 0.5;
+ }
