@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 1024" style="enable-background:new 0 0 1280 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{font-family:'MyriadPro-Regular';}
+	.st2{font-size:12px;}
+	.st3{fill:none;}
+	.st4{fill:#FFDC7C;}
+	.st5{fill:#FFDC7C;stroke:#000000;stroke-miterlimit:10;}
+	.st6{fill:#39496A;stroke:#000000;stroke-miterlimit:10;}
+	.st7{fill:#39496A;}
+	.st8{fill:#FFFFFF;}
+	.st9{font-family:'BerlinSansFBDemi-Bold';}
+	.st10{font-size:30px;}
+</style>
+<g id="Layer_2" class="st0">
+</g>
+<g id="Layer_1">
+	<text transform="matrix(1 0 0 1 563.1973 413.9756)" class="st1 st2">Lorem ipsum</text>
+	<text transform="matrix(1 0 0 1 502.1484 422.4546)" class="st1 st2">Ruben Castillo Sainz</text>
+	<rect x="449.58" y="430.09" class="st3" width="352.73" height="54.27"/>
+	<text transform="matrix(1 0 0 1 449.5781 438.6055)" class="st1 st2">R</text>
+	<g>
+		<g>
+			<path d="M191.47,339.56c1.93,0,1.93-3,0-3C189.54,336.56,189.54,339.56,191.47,339.56L191.47,339.56z"/>
+		</g>
+	</g>
+	<g>
+		<path class="st4" d="M76,653c0,5.52,4.48,10,10,10h516c5.52,0,10-4.48,10-10V137c0-5.52-4.48-10-10-10H86c-5.52,0-10,4.48-10,10
+			V653z"/>
+	</g>
+	<path class="st5" d="M790.5,350.5"/>
+	<path class="st6" d="M346.98,145"/>
+	<g>
+		<path class="st7" d="M316,515c0,5.52,4.48,10,10,10h516c5.52,0,10-4.48,10-10V137c0-5.52-4.48-10-10-10H326c-5.52,0-10,4.48-10,10
+			V515z"/>
+	</g>
+	<rect x="389" y="460.89" class="st3" width="409" height="46.63"/>
+	<text transform="matrix(1 0 0 1 458.9316 482.0361)" class="st8 st9 st10">Ruben Castillo Sainz</text>
+</g>
+</svg>

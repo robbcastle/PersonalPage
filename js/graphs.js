@@ -1,4 +1,5 @@
-(function() {
+(
+	function Jacinto() {
 	
 	var Progress = function( element ) {
 		

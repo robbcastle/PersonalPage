@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruben Castillo Sainz's Photography</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/PersonalPage/css/index.css">
-    <link rel="stylesheet" href="/PersonalPage/css/profile.css">
-
+    <link rel="stylesheet" href="/PersonalPage/css/Main__Photog.css">
+    <link rel="icon" type="image/png" href="/PersonalPage/images/RubenDrawing.jfif"/>
 
 </head>
 
@@ -35,10 +34,176 @@
     </navbar>
     </header>
 <body>
-    <div class="Square">
-        <div class="Inner-Square"></div>
-        <img src="/PersonalPage/images/accenture14.jpg" class="myPhoto">
-        <h1 class="myTitle">Rubén Castillo Sainz</h1>
+<section id ="myIntroduction">
+<div class="Flex-Container"> 
+   
+        <div class="item">
+            <img src="/PersonalPage/images/Intro_Placeholder.svg" class="Placeholder"> 
+        </div>
+        
+            <!-- Here I need to create a div para poner mi foto a la izquierda-->
+        <div class="item">
+            <h1 class="Hello">HI. I'M RUBÉN!</h2>
+            <p class="myDescription">I am an IT developer currently working for FedEx as an Application Solutions Architect.
+            My main domain is PeopleSoft and I develop applications for our Business Partners in domains like Billing and Accounts Receivables, Customer Case Management and Dashboards.
+            </p>
+        </div>     
+</div> 
+</section>
+
+<!-- Here begins the professional experience section -->
+<section>
+    <div class="Flex-Experience-Container">
+        <div class="Experience-Item">
+            <h1 class="Experience">Experience</h1>
+        </div>
+            <!-- Here I need to create a div para poner mi foto a la izquierda-->
+        <div class="Flex-Experience-Rows">
+        <div class="Child-Experience">
+            <h1 class="Hello">Application Solutions Architect</h2>
+            <p class="myDescription">PeopleSoft Developer & Product Owner. Specialized in Billing & Accounts Receivables.
+            </p>
+        </div>  
+        <div class="Child-Experience">
+            <h1 class="Hello">Software Implementation Consultant</h2>
+            <p class="myDescription">Traveling to customers to implement Quiter Auto Web Software, trainings and parametrizations. <br> México and Spain regions.
+            </p>
+        </div>     
+        <div class="Child-Experience">
+            <h1 class="Hello">Billing Specialist Agent</h2>
+            <p class="myDescription">Bills creation and adjustment.
+            </p>
+        </div>        
     </div>
+</section>
+
+
+<!-- Here begins the Education section -->
+<section class="Education-Section">
+
+    <div class="Education" id="Education">
+    <div class="Flex-Education-Container">
+        <div class="EducationHeader">
+            <h2 class="EducationTitle">Education</h2>
+        </div>
+        
+            <div class="Study">
+                <img class="Study-Icon" src="/PersonalPage/images/Browser.png">
+                <h3 class="Study-Type">Master in Business and Information Technology</h3>
+                <p class="Study-Description">University of Cantabria, Spain. <br>2016-2017</p>
+            </div>
+
+            <div class="Study">
+                <img class="Study-Icon" src="/PersonalPage/images/statistic.png">
+                <h3 class="Study-Type">Bachelor Degree in Management</h3>
+                <p class="Study-Description">University of Basque Country, Spain. <br>2011-2015</p>
+            </div>
+
+            <div class="Study">
+                <img class="Study-Icon" src="/PersonalPage/images/travel.png">
+                <h3 class="Study-Type">Erasmus Exchange during Bachelor Degree</h3>
+                <p class="Study-Description">University of Warsaw, Poland. <br>2014-2015</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Here begins the Skills section -->
+<section class="Skills-Section" id="Skills-Section">
+
+    <div class="mySkills">
+        <div class="SkillsHeader">
+            <h2 class="SkillsTitle">Skills</h2>
+                
+            <div id="names">
+                <h3 class="bactive" id="hards">Hard Skills </h3><h3 class="bactive" id ="softs">Soft Skills</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="Flex-Skills-Container">
+                <div id="hbars" width="200" height="200">
+                    <div id = "Skillbox" class="bar hbar" data-percent ="100" >
+                        <h3 class="SkillName">PeopleCode</h3>
+                        <canvas class="bar-circle" width="250" height="250"></canvas>
+                    </div>
+                </div>
+                    <div id="hbars">
+                        <div  id = "Skillbox" class="bar hbar" data-percent ="50">
+                            <h3 class="SkillName">SQC</h3>
+                            <canvas class="bar-circle" width="250" height="250"></canvas>
+                        </div>
+                    </div>
+
+                    <div id="hbars">
+                        <div  id = "Skillbox" class="bar hbar" data-percent ="75">
+                            <h3 class="SkillName">SQL</h3>
+                            <canvas class="bar-circle" width="250" height="250"></canvas>
+                        </div>
+                    </div>
+
+                    <div id="hbars">
+                        <div  id = "Skillbox" class="bar hbar" data-percent ="75">
+                            <h3 class="SkillName">HTML</h3>
+                            <canvas class="bar-circle" width="250" height="250"></canvas>
+                        </div>
+                    </div>
+
+                    <div id="hbars">
+                        <div  id = "Skillbox" class="bar hbar" data-percent ="75">
+                            <h3 class="SkillName">CSS</h3>
+                            <canvas class="bar-circle" width="250" height="250"></canvas>
+                        </div>
+                    </div>
+
+                    <div id="hbars">
+                        <div  id = "Skillbox" class="bar hbar" data-percent ="25" text-align="center">
+                            <h3 class="SkillName" >JavaScript</h3>
+                            <canvas class="bar-circle" width="250" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Execute JS to generate the graphs -->
+                        <script  src="/PersonalPage/js/graphs.js"></script>
+</section>
+
+<!-- Start of the Certificates section -->
+<section class="Certificates-Section">
+    <div class="myCertificates">
+        <div class="Certificates-Header">
+            <h2 class="Certificates-Title">Certificates</h2>
+        </div>
+    
+        <div class="Certificates-Container">
+            <div class="Certificate-Info">
+                <p class="Certificate-Month">Jun 19</p>
+                <img src="/PersonalPage/images/Oracle.jfif" class="Certificate-Logo" alt="">
+                <h3 class="Certificate-Issuer">Oracle</h3>
+                <p class="Certificate-Description">PeopleSoft Application Developer: Peoplecode</p>
+                <button class="Certificate-Btn">View Certificate</button>
+            </div>
+    
+            <div class="Certificate-Info">
+                <p class="Certificate-Month">Feb 19</p>
+                <img src="/PersonalPage/images/Oracle.jfif" class="Certificate-Logo" alt="">
+                <h3 class="Certificate-Issuer">Oracle</h3>
+                <p class="Certificate-Description">PeopleSoft & PeopleTools I/II</p>
+                <button class="Certificate-Btn">View Certificate</button>
+            </div>
+       
+            <div class="Certificate-Info">
+                <p class="Certificate-Month">Nov 21</p>
+                <img src="/PersonalPage/images/SAFETeams.png" class="Certificate-Logo2" alt="">
+                <h3 class="Certificate-Issuer">Scaled Agile, Inc.</h3>
+                <p class="Certificate-Description">SAFE 5 Practioner</p>
+               <a href="https://www.credly.com/badges/f50e0159-b7b3-4189-b7fa-f5cd767b30b5/public_url" target="_blank"> <button class="Certificate-Btn" >View Certificate</button></a>
+            </div>
+        </div>
+        </div>
+    </section>  
+
+
 </body>
 </html>

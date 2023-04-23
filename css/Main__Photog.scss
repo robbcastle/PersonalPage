@@ -1,0 +1,390 @@
+/* Global Page variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+/*@import url(/PersonalPage/css/footer.css); */
+
+$Font-Color: #39496a;
+$Small-Font-Color:#798099;
+$Font-Family: poppins,sans-serif,roboto;
+$Section-Title:5em;
+
+
+
+*{
+    margin:0;
+    padding:0;
+ font-family: $Font-Family;
+ color:$Font-Color;
+}
+
+.body{ width:100vw;
+height: 100vh;
+ font-size: 3.2vw;
+ }
+
+ /* Header and Navigation bar */
+
+ header{
+    position: sticky;
+    display:flex;
+    justify-content:space-between;
+    left:0;
+    top:0;
+    right:0;
+    background-color: WHITE;
+    z-index: 9;
+}
+
+.ruben{
+    margin-left: 10px;
+    font-family:monospace;
+    color:black;
+    font-family: $Font-Family;
+    font-size:30px;
+    margin-bottom:0px;
+}
+
+.myName:hover{
+    cursor: pointer;
+}
+
+.aboutMe{
+    margin-left: 10px;
+    font-family:monospace;
+    color:rgb(146, 142, 142);;
+    font-size:20px;
+    padding-top:0px;
+}
+
+ .navbar{
+    display:flex;
+}
+     
+ .links-container{
+    display:flex;
+    text-decoration: none;
+}
+
+.link, .link-item{
+    text-decoration: none;
+    list-style: none;
+    padding-top:20px;
+    padding:10px;
+    margin-top:10px;
+    text-align: right;
+    color:rgb(146, 142, 142);
+}
+
+.link:hover, .link-item:hover{
+    background-color: $Font-Color;
+    border-radius: 50px;
+    color:#fff;
+}
+
+/* Introduction Section */
+.Flex-Container{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+            }
+
+
+    .item{
+        height:500px;
+       width:500px;
+    }
+
+    .Hello{
+        font-size: 42px;
+        font-weight: bold;
+        margin:20px;
+    }
+
+    .myDescription{
+        font-size: 25px;
+        color:$Small-Font-Color;
+        margin:20px;
+    }
+
+
+    
+
+    .Flex-Experience-Container{
+        height: 100vh;
+        width: auto;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        align-items: center;
+        background-color:  #f8eac4;
+    }
+
+    .Experience{
+        color:#39496a;
+        font-size:$Section-Title;
+    }
+
+    .Flex-Experience-Rows{
+        margin-left:0;
+             }
+
+          .Child-Experience{
+            padding-bottom: 20px;
+          }
+
+  
+.Education{
+    background-color: #f2f2f2;
+}
+    .Flex-Education-Container{
+        height:100vh;
+        width:auto;
+     display:flex;
+        flex-wrap: wrap;
+        flex-shrink:1;
+        justify-content:center;
+        align-items: center;
+    }
+
+    /* Make the title occupy the whole 1st row */
+    .EducationHeader{
+        flex-basis: 100%;
+    }
+    .EducationTitle{
+        color:#39496a;
+       font-size:$Section-Title;
+       text-align: center;
+       margin: top 80px;
+       
+   }
+
+   .Study{
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;   
+    margin:20px;
+   border-radius: 25px;
+      }
+    .Study-Icon{
+        width: 30%;
+        margin:auto;
+        display: block;        
+    }
+
+    .Study-Type{
+        color:$Font-Color;
+        font-size:1em;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    .Study-Description{
+        text-align: center;
+        color:$Small-Font-Color;
+        padding-top: 5%;
+    }
+
+
+    /*************************************************************
+    Start of Skills secion
+    *************************************************************/
+    .Skills-Section{
+        height:100vh;
+        width:auto;
+    }
+
+.SkillsHeader{
+    text-align: center;
+    font-size: $Section-Title;
+}
+
+
+.bactive{
+    font-size: 25px;
+    display: inline-block;
+    padding:20px;
+}
+    .Flex-Skills-Container{
+        display:flex;
+               justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 100px;
+    }
+    .SkillName{
+        padding-bottom:25px;
+        text-align: center;
+    }
+
+    .bar-circle{
+        padding-bottom:50px;
+    }
+
+
+    /*************************************************************
+    Start of Certificates Section
+    *************************************************************/
+
+
+    .Certificates-Container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 100px;
+      
+        padding-bottom:100px;
+               justify-content: space-evenly;
+        
+    }
+
+
+    .Certificates-Header{
+        text-align: center;
+        font-size: $Section-Title;
+    }
+
+.Cetficate-Info{
+    margin-bottom: 100px;
+}
+    .Certificate-Month{
+        position: center;
+      text-align:center;
+      align-items: center;
+      background: #ffdc7c;
+      padding: 5px;
+      border-radius: 5px;
+      color:white;  
+    }
+
+    .Certificate-Issuer, .Certificate-Description{
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .Certificate-Issuer{
+        color:black;
+        font-size:30px;
+        margin:auto;
+        padding-top: 15px;
+    }
+    
+    
+    .Certificate-Logo{
+        display:block;
+        height:250;
+        width:250PX;
+        margin-left:82px;
+        margin-top:5px;
+        padding-top: 20px;
+        margin:auto;
+    }
+    
+    .Certificate-Logo2{
+        display:block;
+        height:300PX;
+        width:450PX;
+        margin:auto;
+        padding-top: 20px;
+    }
+    
+    .Certificate-Btn{
+        margin-top:25px;
+        display:block;
+        margin:auto;
+        border-radius: 100px;
+        padding:10px;
+        background-color: #ffdc7c;
+        border:none;
+        text-decoration: none;
+        margin-bottom: 50px;
+        
+    }
+    
+    .Certificate-Btn:hover{
+        opacity:0.5}
+    
+      
+
+
+
+/* Let's make it grid
+.Square{
+    background-color: black;
+    width:33%;
+    height:66%;
+    position:absolute;
+}
+
+.Inner-Square{
+    background-color: beige;
+    width:60%;
+    height:60%;
+    position:inherit;
+    right:-20%;
+}
+
+.myTitle{
+position: inherit;
+    top:40%;
+    right:0.2%}
+
+
+.myPhoto{
+    display: flex;
+    margin:auto;
+    justify-items: center;
+    width:30%;
+    height:30%;
+    z-index: 1;
+    position: absolute;
+    right:50%;
+    left:50%;
+    top:10%;
+    border-radius: 50%;
+}
+*/
+
+@media screen and (max-width: 750px) {
+    .Flex-Container, .Flex-Experience-Container, .Flex-Education-Container,.Skills-Section,.Certificates-Container{   
+      flex-direction: column;
+             font-size: auto; 
+             padding-top: 20px;
+             margin-top: 20px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height:auto;
+            width:auto;
+    }
+    .Study{
+       margin-top: 100px; 
+    }
+
+    .Study:nth-child(4){
+        margin-bottom: 100px;
+    }
+  }
+
+    /* Hide the normal menu for small devices*/
+    @media screen and (max-width: 500px) {
+        .navbar {
+          display: none;
+        }
+        .navbar-hamburger {
+          display: inline;
+          overflow: hidden;
+          position:relative;
+        }
+      }
+/* Hide the Hamburger menu for big devices*/
+      @media screen and (min-width: 500px) {
+        .navbar {
+          display: inline;
+        }
+        .navbar-hamburger {
+          display: none;
+        }
+      }
+

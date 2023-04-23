@@ -1,144 +1,186 @@
 @import url(/PersonalPage/css/footer.css);
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-body, html {
-    height: 100%;
-    color:#39496a;
+/* =============================================================
+
+Header Section
+
+================================================================*/
+
+/* Setting up the global style*/
+
+*{
+       margin:0;
+       padding:0;
     font-family: poppins,sans-serif,roboto;
-  }
-
-  body {
-    margin: 0;
-    padding: 0;
-  }
-
-header{
-    position: sticky;
-    display:flex;
-    justify-content:space-between;
-    left:0;
-    top:0;
-    right:0;
-    background-color: WHITE;
-    z-index: 9;
+    color:#39496a;
 }
 
-.ruben{
-    font-family:monospace;
-    color:rgb(146, 142, 142);
-    font-size:30px;
-    margin-bottom:0px;
-}
+.body{ width:100vh;
+    font-size: 3.2vw;
+    }
 
-.aboutMe{
-    font-family:monospace;
-    color:black;
-    font-size:20px;
-    padding-top:0px;
-}
-.navbar{
-    display:flex;
-}
-
-.links-container{
-    display:flex;
-    text-decoration: none;
-}
-
-.link, .link-item{
-    text-decoration: none;
-    list-style: none;
-    padding-top:20px;
-    padding:10px;
-    margin-top:10px;
-    text-align: right;
-    color:rgb(146, 142, 142);
-}
-
-.IntroductionSection{
-    display:flex;
-}
-.myProfilePhoto{
-    background-color: black;
-    height:25%px;
-    width:10%;
-    display:flex;
-    left:0;
-
-}
-.myIntroduction{
-    font-family:monospace;
-    color:black;
-    font-size:30px;  
-    font-weight: 800;
-    text-align:center;
-    width:100%;
-    position:relative;
-}
-.Hello{font-family:monospace;
-    color:black;
-    font-size:30px;  
-    font-weight: 800;
-
-}
-
-.myDescription{
-      display:flex;
-    color:rgb(146, 142, 142);
-    align-items:center;
-    width:100%;
-    justify-content: center;
+    header{
+        position: sticky;
+        display:flex;
+        justify-content:space-between;
+        left:0;
+        top:0;
+        right:0;
+        background-color: WHITE;
+        z-index: 9;
+    }
     
-}
+    .ruben{
+        font-family:monospace;
+        color:rgb(146, 142, 142);
+        font-size:30px;
+        margin-bottom:0px;
+    }
+    
+    .aboutMe{
+        font-family:monospace;
+        color:black;
+        font-size:20px;
+        padding-top:0px;
+    }
 
-.resume, .myCV{
-    align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
+    /* Styling the Navbar & the Hamburger menu when a small screen */
+    .navbar{
+        display:flex;
+    }
 
-.resume{
-    border-top:5px solid black;
-}
-.myCV{
-    border-radius: 100px;
-    padding:20px;
-    height:40px;
-   color:rgb(146, 142, 142); 
-      border:none;
-}
 
-.myCV:hover{
-    opacity: .5;
-}
+    #hamburger-menur{
+        width:50px;
+        height:50px;
+        display:block;
+        border:none;
+        padding:0px;
+        margin:20px;
+        background: linear-gradient(
+             to bottom, 
+             #3D0E61, #3D0E61 20%, 
+             white 20%, white 40%, 
+            #3D0E61 40%, #3D0E61 60%, 
+            white 60%, white 80%, 
+        #3D0E61 80%, #3D0E61 100%
+  );
+    }
 
-#linkedin {
-    margin-left: 20px;
+    #hamburger-menu .navbar-hamburger {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: -250px;   
+        width: 200px;
+        height: 100%;
+        background-color: #3D0E61;
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    
+    .links-container{
+        display:flex;
+        text-decoration: none;
+    }
+    
+    .link, .link-item{
+        text-decoration: none;
+        list-style: none;
+        padding-top:20px;
+        padding:10px;
+        margin-top:10px;
+        text-align: right;
+        color:rgb(146, 142, 142);
+    }
+    
+    .IntroductionSection{
+        display:flex;
+        height:auto;
+    }
+    .myProfilePhoto{
+        background-color: black;
+        height:25%px;
+        width:10%;
+        display:flex;
+        left:0;
+    
+    }
+    .myIntroduction{
+        font-family:monospace;
+        color:black;
+        font-size:30px;  
+        font-weight: 800;
+        text-align:center;
+        width:100%;
+        position:relative;
+    }
+    .Hello{font-family:monospace;
+        color:black;
+        font-size:30px;  
+        font-weight: 800;
+    
+    }
+    
+    .myDescription{
+          display:flex;
+        color:rgb(146, 142, 142);
+        align-items:center;
+        width:100%;
+        justify-content: center;
+        
+    }
+    
+    .resume, .myCV{
+        align-items: center;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+    
+    .resume{
+        border-top:5px solid black;
+    }
+    .myCV{
+        border-radius: 100px;
+        padding:20px;
+        height:40px;
+       color:rgb(146, 142, 142); 
+          border:none;
+    }
+    
+    .myCV:hover{
+        opacity: .5;
+    }
+    
+    #linkedin {
+        margin-left: 20px;
+        margin-top:10px;
+        padding: 10px;
+    width: auto;
+    border-radius: 100px 100px;
+      color:rgb(146, 142, 142);
+      background-color: black;
+    
+    }
+    
+    #github {
+    Margin-left:20px;
     margin-top:10px;
-    padding: 10px;
-width: auto;
-border-radius: 100px 100px;
-  color:rgb(146, 142, 142);
-  background-color: black;
+    color:black;
+    }
+    
+    #github:hover{
+        opacity:0.5;
+    }
+    
+    #linkedin:hover{
+        opacity: .5;
+    }
+    
 
-}
-
-#github {
-Margin-left:20px;
-margin-top:10px;
-color:black;
-}
-
-#github:hover{
-    opacity:0.5;
-}
-
-#linkedin:hover{
-    opacity: .5;
-}
-
-
+    
 /* =============================================================
 
 Start of Experience section style
@@ -147,343 +189,363 @@ Start of Experience section style
 
 
 .myExperience{
-  display:flex;
-   margin-top: 20px;
-   background-color: #ffffff;
-   ;
-}
-
-.ExperienceHeader{
-    background-color: #f8eac4;
-    height:auto;
-    width: 50%;
-    align-items: center;
-    justify-content: center;
-    DISPLAY:FLEX;
-    border-top-right-radius  : 50px;
-    border-bottom-right-radius  : 50px;
-}
-
-.ExperienceTitle{
-        color:black;
-    font-size:100px;
-  
-}
-
-.Positions-Container{
-    flex:auto;
-}
-.myPositions{  
-border: 2px solid rgb(146, 142, 142);
-flex:1;
-border-radius: 10px 10px;
-margin:20px;
-padding:10px;
-box-shadow: 0px 0px 0px 2px #000,
-0 6px 0 #ffdc7c,
-0px 6px 0px 2px #000,
-0px 0px 0px 2px #000;
-}
-
-.myPositions:hover{
-    cursor:pointer;
-    opacity: 0.5;
-    transform: translate(10px,0px);
-}
-
-
-/* THIS IS JUST TEMPORARY */
-.myPositions:active{
-    opacity: 1.5;
-    transform: translate(-50%,-50%);
-    height:50%;
-    width:50%;
-   position:absolute;
-    justify-content: CENTER;
-    align-items: CENTER;
-    background-color: white;
-}
-
-.Position-Image{
-    display:flex;
-    height:100px;
-    width:100px;
-    
-}
-
-.PositionTitle {
-    position:relative;
-    right:0;
-    top:0;
-    width:800px;
-    background-color: black;
-    float:right;
-      /*  text-align: center;
-     margin-right: 50px; 
-    padding:auto;
-    right:10px;
-    width:100%;
-
-   margin-left:50%;
-    text-align: right;*/
-}
-
-
-/* =============================================================
-
-Start of Education section style
-
-================================================================*/
-
-.myEducation{
-    display:1;
-     margin-top: 10px;
-     background-color: white;
-  }
-  
-  .EducationHeader{
-      background-color: white;
-      width: 100%;
-      height:350px;
-      align-items: top;
-      justify-content: center;
-      DISPLAY:FLEX;
-    }
-
-  .EducationTitle{
-    color:black;
-    font-size:100px;
-    margin-top:0;
-    ;
-}
-
-.Education-Container{
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top:150px;
-    position:absolute;
-    align-items: center;
-    }
-
-    .Study-Type{
-        display:flex;
-        justify-content: center;
-        padding:10px;
-        font-size: 20px;
-        font-family:poppins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        color:black;
-        text-align: center;
-    }
-    .Study{
-        margin: 10px;
-        padding-bottom: 20px;
-        padding-top: 20px;
-          /*     border: 5px solid rgb(230, 222, 222); */
-        background-color: rgb(240, 237, 237);
-        border-radius: 10px;
-        
-                }
-
-    .Study-Description{
-        text-align: center;
-        font-family: poppins,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
-
-    .Study-Icon{
-        width: 20%;
-        margin:auto;
-        display: block;
-        
-    }
-
-/* =============================================================
-
-Start of Skilss section style
-
-================================================================*/
-
-.skills-section{
-  /*  background-color: rgb(230, 222, 222);*/
-  background-color:  #f8eac4;
-  margin-top: 10%;
-}
-.mySkills{
-    display:flex;
-    flex:1;
-        margin-top: 10px;
-     height:1   50px;
-     width:100%;
-     /*background-color: rgb(236, 230, 230);*/
-     background-color: #f8eac4;
-    
+    width:100%;
+    height:auto;
+    grid-template-columns: auto auto auto auto;
+     margin-top: 20px;
+     background-color: #ffffff;
+     ;
   }
   
-  .SkillsHeader{
-    flex:1;
-     /* background-color: rgb(230, 222, 222);*/
+  .ExperienceHeader{
       background-color: #f8eac4;
-      height:150px;
-      width: 100%;
-      align-items: top;
-    justify-content: center;
-        DISPLAY:FLEX;
+      height:auto;
+      grid-column: 1 / span 2;
+      border-top-right-radius: 50px;
+      border-bottom-right-radius: 50px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
   }
-
-  .SkillsTitle{
-    margin-top:0;
-        color:black;
-    font-size:100px;  
-}
-
-#names{
-    display:flex;
-    position:absolute;
-display:inline-flex;
-margin-top:100px;
-justify-content: center;
-}
-
-.bactive{
-    justify-content: space-around;
-    padding-right:10px;
-    cursor:pointer;
-    color:black;}
-
-
-#hbars{
-    display:inline-flex;
-    margin:none;
-  /* background-color: black;*/
-    justify-content: center;
-   width:33%;
-   padding:0;
-}
-
-#Skillbox{
-width: auto;
-
-}
-.SkillName{
-    color:black;
-    text-align: center;
-    font-size: 50px;
-}
-
-
-/* =============================================================
-
-Start of Certificates section style
-
-================================================================*/
-
-.Certificates-Title{
-    margin-top:25px;
-    color:black;
-    font-size:100px;  
-    text-align: center;
-    height: 150px;
-    margin-bottom: 0;
-}
-
-.Certificates-Container{
-    display:flex;
-    flex-direction: row;
-}
-.Certificate-Month{
-    position: center;
-    text-align:center;
-    background: #ffdc7c;
-    padding: 5px;
-    border-radius: 5px;
-    color:white;  
+  
+  .ExperienceTitle{
+          color:black;
+      font-size:100px;  
+  }
+  
+  .Positions-Container{
+      display:grid;
+  }
+  .myPositions{  
+  border: 2px solid rgb(146, 142, 142);
+  flex:1;
+  border-radius: 10px 10px;
+  margin:20px;
+  padding:10px;
+  box-shadow: 0px 0px 0px 2px #000,
+  0 6px 0 #ffdc7c,
+  0px 6px 0px 2px #000,
+  0px 0px 0px 2px #000; 
+  }
+  
+  .myPositions:hover{
+      cursor:pointer;
+      opacity: 0.5;
+      transform: translate(10px,0px);
+  }
+  
+  
+  /* THIS IS JUST TEMPORARY */
+  .myPositions:active{
+      opacity: 1.5;
+      transform: translate(-50%,-50%);
+      height:50%;
+      width:50%;
+     position:absolute;
+      justify-content: CENTER;
+      align-items: CENTER;
+      background-color: white;
+      min-width: 350px;
+  }
+  
+  .Position-Image{
+      display:flex;
+      height:100px;
+      width:100px;
       
-}
-
-.Certificate-Info{
-    flex:1;
-    padding:10px;
+  }
+  
+  .PositionTitle {
+      background-color: white;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+flex:1 0 350px;        /*  text-align: center;
+       margin-right: 50px; 
+      padding:auto;
+      right:10px;
+      width:100%;
+  
+     margin-left:50%;
+      text-align: right;*/
+  }
+  
+  
+  /* =============================================================
+  
+  Start of Education section style
+  
+  ================================================================*/
+  
+  .myEducation{
+      display:1;
+       margin-top: 10px;
+       background-color: white;
+       height:auto;
+       width:100%;
+       position: relative;
+    }
     
-    height:33%;
-}
-
-
-.Certificate-Issuer, .Certificate-Description{
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-.Certificate-Issuer{
-    color:black;
-}
-
-
-.Certificate-Logo{
-    display:block;
-    height:150PX;
-    width:150PX;
-    margin-left:82px;
-    margin-top:25px;
-    margin:auto;
-}
-
-.Certificate-Logo2{
-    display:block;
-    height:150PX;
-    width:250PX;
-    margin:auto;
-}
-
-.Certificate-Btn{
-    margin-top:25px;
-    display:block;
-    margin:auto;
-    border-radius: 100px;
-    padding:10px;
-    background-color: #ffdc7c;
-    border:none;
-    text-decoration: none;
-}
-
-.Certificate-Btn:hover{
-    opacity:0.5}
-
-    @media screen and (max-width: 500px) {
-        .Certificates-Container, .Education-Container, .myEducation, .Certificates-Title, .Positions-Container {   
-          flex-direction: column;
-        }
+    .EducationHeader{
+        background-color: white;
+        width: 100%;
+        height:350px;
+        align-items: top;
+        justify-content: center;
+        DISPLAY:FLEX;
       }
-/* Hide the normal menu for small devices*/
-      @media screen and (max-width: 500px) {
-        .navbar {
-          display: none;
-        }
-        .navbar-hamburger {
-          display: inline;
-        }
+  
+    .EducationTitle{
+      color:black;
+      font-size:100px;
+      margin-top:0;
+      ;
+  }
+  
+  .Education-Container{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top:150px;
+      position:absolute;
       }
-/* Hide the Hamburger menu for big devices*/
-      @media screen and (min-width: 500px) {
-        .navbar {
-          display: inline;
-        }
-        .navbar-hamburger {
-          display: none;
-        }
+  
+      .Study-Type{
+          display:flex;
+          justify-content: center;
+          padding:10px;
+          font-size: 20px;
+          font-family:poppins, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          color:black;
+          text-align: center;
       }
-
-      @keyframes fadeInOutAnimation {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
+      .Study{
+          margin: 10px;
+          padding-bottom: 20px;
+          padding-top: 20px;
+            /*     border: 5px solid rgb(230, 222, 222); */
+          background-color: rgb(240, 237, 237);
+          border-radius: 10px;
+          
+                  }
+  
+      .Study-Description{
+          text-align: center;
+          font-family: poppins,Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
       }
+  
+      .Study-Icon{
+          width: 20%;
+          margin:auto;
+          display: block;
+          
+      }
+  
+  /* =============================================================
+  
+  Start of Skilss section style
+  
+  ================================================================*/
+  
+  .skills-section{
+    /*  background-color: rgb(230, 222, 222);*/
+    background-color:  #f8eac4;
+    margin-top: 10%;
+  }
+  .mySkills{
+      display:flex;
+      flex:1;
+          margin-top: 10px;
+       height:1   50px;
+       width:100%;
+       /*background-color: rgb(236, 230, 230);*/
+       background-color: #f8eac4;
       
-      .Study {
-        cursor: pointer;
-       animation: fadeInOutAnimation 1.5s ;
-       animation-direction: alternate-reverse;
-        animation-timing-function: ease-in-out;
-      }
-
+    }
+    
+    .SkillsHeader{
+      flex:1;
+       /* background-color: rgb(230, 222, 222);*/
+        background-color: #f8eac4;
+        height:150px;
+        width: 100%;
+        align-items: top;
+      justify-content: center;
+          DISPLAY:FLEX;
+    }
+  
+    .SkillsTitle{
+      margin-top:0;
+          color:black;
+      font-size:100px;  
+  }
+  
+  #hards, #softs{
+    padding: 15px;
+  }
+  #names{
+      display:flex;
+      position:absolute;
+  display:inline-flex;
+  margin-top:100px;
+  justify-content: center;
+  }
+  
+  .bactive{
+      justify-content: space-around;
+      padding-right:10px;
+      cursor:pointer;
+      color:black;}
+  
+  
+  #hbars{
+      display:inline-flex;
+      margin:none;
+    /* background-color: black;*/
+      justify-content: center;
+     width:33%;
+  }
+  
+  #Skillbox{
+  width: auto;
+  
+  }
+  .SkillName{
+      color:black;
+      text-align: center;
+      font-size: 50px;
+  }
+  
+  
+  /* =============================================================
+  
+  Start of Certificates section style
+  
+  ================================================================*/
+  
+  .Certificates-Title{
+      margin-top:25px;
+      color:black;
+      font-size:100px;  
+      text-align: center;
+      height: 150px;
+      margin-bottom: 0;
+  }
+  
+  .Certificates-Container{
+      display:flex;
+      flex-direction: row;
+  }
+  .Certificate-Month{
+      position: center;
+      text-align:center;
+      background: #ffdc7c;
+      padding: 5px;
+      border-radius: 5px;
+      color:white;  
+        
+  }
+  
+  .Certificate-Info{
+      flex:1;
+      padding:10px;
+      
+      height:33%;
+  }
+  
+  
+  .Certificate-Issuer, .Certificate-Description{
+      margin-bottom: 5px;
+      text-align: center;
+  }
+  
+  .Certificate-Issuer{
+      color:black;
+  }
+  
+  
+  .Certificate-Logo{
+      display:block;
+      height:150PX;
+      width:150PX;
+      margin-left:82px;
+      margin-top:5px;
+      padding-top: 20px;
+      margin:auto;
+  }
+  
+  .Certificate-Logo2{
+      display:block;
+      height:150PX;
+      width:250PX;
+      margin:auto;
+      padding-top: 20px;
+  }
+  
+  .Certificate-Btn{
+      margin-top:25px;
+      display:block;
+      margin:auto;
+      border-radius: 100px;
+      padding:10px;
+      background-color: #ffdc7c;
+      border:none;
+      text-decoration: none;
+  }
+  
+  .Certificate-Btn:hover{
+      opacity:0.5}
+  
+      @media screen and (max-width: 500px) {
+          .Certificates-Container, .Education-Container, .myEducation, .Certificates-Title, .Positions-Container {   
+            flex-direction: column;
+                   font-size: 2em; 
+                   height:auto;
+          }
+        }
+  
+        @media screen and (max-width: 500px) {
+           .myName{
+            display: inline;
+           margin:auto;
+           }
+           
+        }
+  /* Hide the normal menu for small devices*/
+        @media screen and (max-width: 500px) {
+          .navbar {
+            display: none;
+          }
+          .navbar-hamburger {
+            display: inline;
+            overflow: hidden;
+            position:relative;
+          }
+        }
+  /* Hide the Hamburger menu for big devices*/
+        @media screen and (min-width: 500px) {
+          .navbar {
+            display: inline;
+          }
+          .navbar-hamburger {
+            display: none;
+          }
+        }
+  
+        @keyframes fadeInOutAnimation {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        
+        .Study {
+          cursor: pointer;
+         animation: fadeInOutAnimation 1.5s ;
+         animation-direction: alternate-reverse;
+          animation-timing-function: ease-in-out;
+        }
+  
+       
